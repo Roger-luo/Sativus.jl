@@ -15,6 +15,5 @@ include("RBM.jl")
 
 include("wave_functions/wave_functions.jl")
 
-@init @require CuArray="3a865a2d-5b23-5a0f-bc46-62713ec82fae" @eval using CuArray
-
+@init @require CuArray="3a865a2d-5b23-5a0f-bc46-62713ec82fae" include("cuda.jl")
 end # module
